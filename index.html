@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakha Yassaar - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-content">
+        <div class="welcome-text">
+          <span class="welcome-word">Welcome</span>
+          <span class="welcome-word">to</span>
+          <span class="welcome-word">My</span>
+          <span class="welcome-word">Portfolio</span>
+        </div>
+        <div class="preloader-bar">
+          <div class="preloader-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="#home" class="logo">SakhaY</a>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">My Skills</a></li>
+          <li><a href="#projects" class="nav-link">My Projects</a></li>
+          <li><a href="#feedback" class="nav-link">Feedback</a></li>
+          <li><a href="#contact" class="nav-link">Contact Me</a></li>
+          <li><a href="#connect" class="nav-link">Connect</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="#home" class="mobile-link">Home</a>
+          <a href="#about" class="mobile-link">About Me</a>
+          <a href="#skills" class="mobile-link">My Skills</a>
+          <a href="#projects" class="mobile-link">My Projects</a>
+          <a href="#feedback" class="mobile-link">Feedback</a>
+          <a href="#contact" class="mobile-link">Contact Me</a>
+          <a href="#connect" class="mobile-link">Connect</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section section">
+      <div class="container">
+        <div class="hero-content animate-on-scroll">
+          <h1 class="hero-title">
+            Hi, It's me <span class="highlight">Sakha Yassaar</span>
+          </h1>
+          <div class="hero-subtitle">
+            <span class="static-text">I'm a</span>
+            <div class="animated-text-container">
+              <span class="animated-text" id="animatedText"
+                >Front-End Developer</span
+              >
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">About Me</h2>
+        <div class="about-content animate-on-scroll">
+          <div class="about-image">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face"
+                alt="Sakha Yassaar"
+              />
+            </div>
+          </div>
+          <div class="about-text">
+            <div class="about-intro">
+              <h3>Sakha Yassaar</h3>
+              <p class="role">Front-End Developer</p>
+            </div>
+            <div class="about-description">
+              <p>
+                Hello! I'm Sakha Yassaar, a passionate Front-End Developer with
+                a keen eye for creating beautiful, functional, and user-friendly
+                web experiences. I specialize in modern web technologies and
+                love bringing creative ideas to life through code.
+              </p>
+              <p>
+                With expertise in HTML5, CSS3, JavaScript, and modern
+                frameworks, I focus on building responsive and interactive
+                websites that provide exceptional user experiences. I'm
+                constantly learning and adapting to new technologies to stay at
+                the forefront of web development.
+              </p>
+              <p>
+                When I'm not coding, I enjoy exploring new design trends,
+                contributing to open-source projects, and sharing knowledge with
+                the developer community. I believe in clean code, pixel-perfect
+                designs, and the power of technology to solve real-world
+                problems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">My Skills</h2>
+        <div class="skills-grid">
+          <!-- Web Fundamentals Card -->
+          <div class="skill-card animate-on-scroll">
+            <h3 class="skill-card-title">Web Fundamentals</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-name-container">
+                    <div class="skill-icon">
+                      <i class="fab fa-html5" style="color: #e34c26"></i>
+                    </div>
+                    <span class="skill-name">HTML5</span>
+                  </div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-percentage="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-name-container">
+                    <div class="skill-icon">
+                      <i class="fab fa-css3-alt" style="color: #1572b6"></i>
+                    </div>
+                    <span class="skill-name">CSS3</span>
+                  </div>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-percentage="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-name-container">
+                    <div class="skill-icon">
+                      <i class="fab fa-js-square" style="color: #f7df1e"></i>
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                  </div>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-percentage="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-name-container">
+                    <div class="skill-icon">
+                      <i class="fab fa-js-square" style="color: #3178c6"></i>
+                    </div>
+                    <span class="skill-name">TypeScript</span>
+                  </div>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-percentage="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frameworks & Libraries Card -->
+          <div class="skill-card animate-on-scroll">
+            <h3 class="skill-card-title">Frameworks & Libraries</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-name-container">
+                    <div class="skill-icon">
+                      <i class="fab fa-css3-alt" style="color: #06b6d4"></i>
+                    </div>
+                    <span class="skill-name">Tailwind CSS</span>
+                  </div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-percentage="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-name-container">
+                    <div class="skill-icon">
+                      <i class="fab fa-react" style="color: #61dafb"></i>
+                    </div>
+                    <span class="skill-name">React.js</span>
+                  </div>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-percentage="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-name-container">
+                    <div class="skill-icon">
+                      <i class="fab fa-laravel" style="color: #ff2d20"></i>
+                    </div>
+                    <span class="skill-name">Laravel</span>
+                  </div>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-percentage="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">My Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 - Normal -->
+          <div class="project-card animate-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
+              alt="E-Commerce Website"
+            />
+            <div class="project-info">
+              <h3>E-Commerce Website</h3>
+              <p>
+                Modern e-commerce platform with clean design and responsive
+                layout
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <button class="btn btn-primary project-btn">View Project</button>
+            </div>
+          </div>
+
+          <!-- Project 2 - Coming Soon -->
+          <div class="project-card animate-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop"
+              alt="Portfolio Dashboard"
+            />
+            <div class="project-info">
+              <h3>Portfolio Dashboard</h3>
+              <p>
+                Interactive dashboard for portfolio management with modern UI
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">CSS</span>
+              </div>
+              <button class="btn btn-disabled project-btn" disabled>
+                Coming Soon
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3 - Coming Soon -->
+          <div class="project-card animate-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop"
+              alt="Mobile App Landing"
+            />
+            <div class="project-info">
+              <h3>Mobile App Landing</h3>
+              <p>
+                Responsive landing page for mobile application with modern
+                design
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <button class="btn btn-disabled project-btn" disabled>
+                Coming Soon
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback-section section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Feedback</h2>
+
+        <!-- Feedback Carousel -->
+        <div class="feedback-carousel animate-on-scroll">
+          <div class="carousel-container">
+            <button class="carousel-btn prev-btn" onclick="prevFeedback()">
+              ‹
+            </button>
+            <div class="feedback-card" id="feedbackCard">
+              <p class="feedback-message" id="feedbackMessage">
+                "Amazing work! Very professional and delivered on time."
+              </p>
+              <p class="feedback-author" id="feedbackAuthor">- Client 1</p>
+              <p class="feedback-time" id="feedbackTime">2025-01-15 10:30 AM</p>
+            </div>
+            <button class="carousel-btn next-btn" onclick="nextFeedback()">
+              ›
+            </button>
+          </div>
+          <div class="carousel-indicators" id="carouselIndicators"></div>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="feedback-form animate-on-scroll">
+          <h3>Share Your Feedback</h3>
+          <form id="feedbackForm">
+            <div class="form-group">
+              <label for="feedbackName">Name</label>
+              <input type="text" id="feedbackName" name="name" required />
+              <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="feedbackMessageInput">Message</label>
+              <textarea
+                id="feedbackMessageInput"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Submit Feedback
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Contact Me</h2>
+        <div class="contact-form animate-on-scroll">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" name="name" required />
+                <span class="error-message" id="contactNameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" name="email" required />
+                <span class="error-message" id="contactEmailError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject" required />
+              <span class="error-message" id="contactSubjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea
+                id="contactMessage"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+              <span class="error-message" id="contactMessageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect" class="connect-section section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Connect With Me</h2>
+        <div class="social-links animate-on-scroll">
+          <a
+            href="https://github.com/sakhayassaar"
+            target="_blank"
+            class="social-link"
+          >
+            <div class="social-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <p>GitHub</p>
+          </a>
+          <a
+            href="https://instagram.com/sakhayassaar"
+            target="_blank"
+            class="social-link"
+          >
+            <div class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <p>Instagram</p>
+          </a>
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            class="social-link"
+          >
+            <div class="social-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <p>WhatsApp</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-text">Made with <span class="heart">❤️</span></div>
+        <p class="copyright">© 2025 Sakha Yassaar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
