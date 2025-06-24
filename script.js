@@ -106,6 +106,7 @@ function closeMobileMenu() {
 function setupActiveNavigation() {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
+  const mobileLinks = document.querySelectorAll(".mobile-link");
 
   function updateActiveNav() {
     let current = "";
@@ -118,7 +119,16 @@ function setupActiveNavigation() {
       }
     });
 
+    // Update desktop nav links
     navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+
+    // Update mobile nav links
+    mobileLinks.forEach((link) => {
       link.classList.remove("active");
       if (link.getAttribute("href") === `#${current}`) {
         link.classList.add("active");
@@ -438,7 +448,16 @@ async function handleFeedbackSubmit(e) {
   const feedbackData = {
     name: formData.get("name"),
     message: formData.get("message"),
-    timestamp: new Date().toLocaleString(),
+    timestamp: new Date()
+      .toLocaleString("en-US", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+      })
+      .replace(",", ""),
   };
 
   try {
@@ -485,7 +504,16 @@ async function handleContactSubmit(e) {
     email: formData.get("email"),
     subject: formData.get("subject"),
     message: formData.get("message"),
-    timestamp: new Date().toLocaleString(),
+    timestamp: new Date()
+      .toLocaleString("en-US", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+      })
+      .replace(",", ""),
   };
 
   console.log("Contact form submitted:", contactData);
@@ -508,7 +536,7 @@ async function loadFeedbacks() {
         {
           name: "Alex Johnson",
           message: "Amazing work! Very professional and delivered on time.",
-          timestamp: "2025-01-15 10:30 AM",
+          timestamp: "2025-01-15 10:30",
         },
       ];
     } else {
@@ -520,7 +548,7 @@ async function loadFeedbacks() {
       {
         name: "Alex Johnson",
         message: "Amazing work! Very professional and delivered on time.",
-        timestamp: "2025-01-15 10:30 AM",
+        timestamp: "2025-01-15 10:30",
       },
     ];
   }

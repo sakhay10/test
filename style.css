@@ -183,7 +183,6 @@ body {
   position: relative;
   transition: var(--transition);
   padding: 5px 0;
-  border-radius: 0; /* Remove border radius */
 }
 
 .nav-link:hover,
@@ -265,9 +264,15 @@ body {
   display: block;
   transition: var(--transition);
   font-weight: 500;
+  position: relative;
 }
 
 .mobile-link:hover {
+  background: var(--light-color);
+  color: var(--primary-color);
+}
+
+.mobile-link.active {
   background: var(--light-color);
   color: var(--primary-color);
 }
@@ -415,7 +420,7 @@ body {
   box-shadow: none;
 }
 
-/* About Section */
+/* About Me Section */
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -474,12 +479,26 @@ body {
   letter-spacing: 0.5px;
 }
 
+.about-description {
+  line-height: 1.8;
+}
+
 .about-description p {
   font-size: 16px;
-  line-height: 1.8;
   color: var(--text-light);
   margin-bottom: 25px;
   text-align: justify;
+  text-indent: 30px;
+  position: relative;
+}
+
+.about-description p:first-child::first-letter {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  float: left;
+  line-height: 3rem;
+  margin: 5px 8px 0 0;
 }
 
 .about-description p:last-child {
@@ -518,8 +537,6 @@ body {
   color: var(--dark-color);
   text-align: center;
   margin-bottom: 30px;
-  position: relative;
-  padding-bottom: 15px;
 }
 
 .skill-card-title::after {
@@ -600,7 +617,7 @@ body {
 /* Projects Section */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Changed to 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
@@ -1016,7 +1033,7 @@ body {
   }
 
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1068,6 +1085,12 @@ body {
     text-align: left;
   }
 
+  .about-description p:first-child::first-letter {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 3px 6px 0 0;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
     max-width: 100%;
@@ -1078,7 +1101,7 @@ body {
   }
 
   .projects-grid {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr;
   }
 
   .form-row {
@@ -1146,6 +1169,12 @@ body {
   .image-wrapper {
     width: 250px;
     height: 250px;
+  }
+
+  .about-description p:first-child::first-letter {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 2px 4px 0 0;
   }
 
   .skill-card,
@@ -1217,5 +1246,10 @@ body {
 
   .social-icon i {
     font-size: 24px;
+  }
+
+  .about-description p:first-child::first-letter {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
   }
 }
